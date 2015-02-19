@@ -266,7 +266,7 @@ public class PostPageActivity extends ActionBarActivity implements AbsListView.O
                     }
                 }
 
-                Elements links = doc.select("body > a");
+                Elements links = doc.select("a");
                 nextPageUrl = null;
                 if (links.size() >= 4) {
                     Element nextLink = links.get(links.size() - 4);
